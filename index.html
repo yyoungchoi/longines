@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Longines</title>
+  <link rel="icon" type="image/webp"  size="32x32" href="example.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./asset/css/layout.css" />
+  <link rel="stylesheet" href="./asset/css/main.css" />
+  <link rel="stylesheet" href="./asset/css/fonts.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <script src="./asset/js/main.js" defer=""></script>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <button class="menu"></button>
+        <a class="logo">
+          <svg width="80" height="20" fill="#252525" version="1.1" viewBox="0 0 80 20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m7.63 8.345c-0.3236 0.9342-1.734 0.7918-3.971 0.7988v-6.773c-0.02699-0.1953 0.0159-0.3939 0.121-0.5606 0.1909-0.2756 0.8031-0.2616 1.513-0.2616v-1.238h-5.284v1.231c0.2049 0 1.234-0.09343 1.383 0.299 0.06193 0.167 0.08734 0.3454 0.07449 0.5232v5.935c0.02132 0.1933 0.0023 0.389-0.05587 0.5746-0.1001 0.1822-0.2328 0.2943-1.397 0.2943v1.201h8.981v-4.291h-1.055c-0.0582 0.7731-0.1234 1.721-0.3096 2.268z"
+            ></path>
+            <path
+              d="m44.4 2.025v6.54c0 0.7007-0.738 0.5676-1.418 0.5932v1.217h5.1v-1.217c-0.9824 0-1.418 0.07941-1.418-0.5932v-6.54c0-0.5536 0.5121-0.4671 1.418-0.4554v-1.259h-5.098v1.243c0.7612 0 1.415-0.09809 1.415 0.4718z"
+            ></path>
+            <path
+              d="m75.93 4.26c-2.544-0.5372-2.631-1.088-2.708-1.387-0.0354-0.1568-0.0382-0.3193-0.0081-0.4772 0.03-0.158 0.0922-0.308 0.1827-0.4407 0.2328-0.341 0.7706-0.6376 1.611-0.6376 2.447 0 3.003 1.693 3.292 2.868h1.055v-3.863h-0.8916l-0.5168 0.7357c-0.8421-0.6458-1.873-0.994-2.933-0.9903-1.42 0-3.615 0.6283-3.615 3.125 0 2.621 2.794 2.964 4 3.202 1.63 0.3246 2.316 0.6493 2.6 1.116 0.3096 0.5138 0.0442 1.21-0.3609 1.53-0.405 0.32-1.541 0.5792-3.026 0.1425-1.327-0.3924-1.862-1.775-2.095-2.868h-0.9941v4.052h0.7939l0.561-0.7988c0.156 0.2546 1.506 1.142 3.308 1.142s3.816-0.8058 3.816-3.186c0-2.73-3.196-3.081-4.069-3.265z"
+            ></path>
+            <path
+              d="m55.66 1.553h0.9312c0.6821-0.01167 0.6611 0.3036 0.6611 0.64v4.438l-4.356-6.32h-4.076v1.261h0.8707c0.5703 0 0.6239 0.3083 0.6332 0.8058v5.921c0 1.002-0.2701 0.8548-1.504 0.8548v1.217h4.924v-1.217c-1.383 0-1.737 0.1471-1.737-0.7591v-5.421c1.681 2.485 5.01 7.395 5.01 7.395h1.888v-8.226c0-0.2336-0.0117-0.5909 0.4237-0.5909h1.08v-1.24h-4.749v1.243z"
+            ></path>
+            <path
+              d="m61.02 1.572c1.287 0 1.655-0.1401 1.655 0.5956v6.295c0 0.7871-0.3073 0.64-1.653 0.6703v1.236h9.614v-4.288h-1.131v1.219c0 1.443-1.022 1.836-1.953 1.812h-2.694v-3.347s1.09-0.1028 1.474 0.2522c0.4656 0.4438 0.4121 1.838 0.4121 1.838h1.092v-5.117h-1.08s-0.0256 1.296-0.4307 1.616c-0.405 0.32-1.467 0.2336-1.467 0.2336v-3.036h2.691c0.1909 0 1.108-0.04905 1.527 0.3877 0.419 0.4368 0.4656 1.357 0.4656 1.81v0.7007h1.085v-4.139h-9.603l-0.0047 1.261z"
+            ></path>
+            <path
+              d="m43.37 13.25-0.8311-1.378h-5.617l-0.8986 1.359-0.7659-1.359h-15l1.862 1.567h3.154l1.164 1.109h3.026l1.383 1.11h3.005l1.101 1.112h2.328v3.226h4.907v-3.226h2.295l1.057-1.112h3.108l1.031-1.11h3.259l1.001-1.109h3.301l1.704-1.567h-14.49l-1.085 1.378zm-4.367 1.668h1.415l-0.6774 1.025-0.738-1.025zm1.383 3.106h-1.325l0.6472-1.065 0.6774 1.065zm-1.678-3.522-0.589-0.9179h3.273l-0.6192 0.9179h-2.065zm0.6448 2.013-1.529 2.322v-4.671l1.529 2.35zm-1.264 2.957 0.589-0.9155h2.063l0.6192 0.9155h-3.271zm3.538-0.5582-1.562-2.394 1.562-2.336v4.73zm16.05-6.54-0.6448 0.5512h-8.488l-0.4656 0.5021h5.145l-0.5937 0.6166h-6.658l-0.4516 0.4929h3.45l-0.6006 0.6049h-5.005l-0.4656 0.4998h1.911l-0.5308 0.5465h-2.095v-3.137h-4.91l-0.014 3.137h-2.095l-0.4982-0.5301h1.862l-0.5307-0.5045h-4.959l-0.6984-0.605h3.508l-0.5122-0.4928h-6.542l-0.6542-0.6236h5.27l-0.5494-0.5022h-8.539l-0.6868-0.5628h13.3l1.089 1.868 1.213-1.852h4.98l1.164 1.899 1.352-1.887 12.95-0.021z"
+            ></path>
+            <path
+              d="m27.33 1.551h0.9312c0.6821-0.01402 0.6611 0.3036 0.6611 0.64v4.449l-4.363-6.33h-4.069v1.261h1.117c0.4959 0.04672 0.3771 0.3083 0.3864 0.8058v5.921c0 0.9343-0.1792 0.8548-1.504 0.8548v1.217h4.935v-1.217c-1.341 0-1.739 0.1168-1.739-0.7591v-5.419c1.669 2.48 4.998 7.39 4.998 7.39h1.886v-8.226c0-0.2336-0.0442-0.5909 0.426-0.5909h1.078v-1.243h-4.744v1.245z"
+            ></path>
+            <path
+              d="m20.07 2.588c-0.38-0.6312-0.8866-1.176-1.488-1.6-0.6011-0.4242-1.284-0.7183-2.004-0.8638-0.4648-0.09025-0.9373-0.1348-1.411-0.1331-1.496-0.01829-2.942 0.5373-4.044 1.553-1.446 1.42-1.862 3.578-1.269 5.531 0.5308 1.803 2.328 3.284 4.19 3.52 0.3732 0.0537 0.7497 0.081 1.127 0.0818 1.862 0 3.58-0.7007 4.71-2.242 1.12-1.586 1.166-4.16 0.1885-5.846zm-1.781 2.782c0 1.537-0.3003 3.27-1.841 3.856-0.4187 0.1417-0.8597 0.2058-1.301 0.1892-0.4502 0.00952-0.8979-0.06983-1.318-0.2336-1.369-0.5886-1.776-2.277-1.806-3.814 0-1.373 0.3771-2.99 1.397-3.639 0.5203-0.3394 1.133-0.5084 1.753-0.4835 0.6314-0.02756 1.256 0.1413 1.788 0.4835 0.8637 0.6516 1.383 1.936 1.334 3.641h-0.0047z"
+            ></path>
+            <path
+              d="m34.34 10.1c0.7424 0.4135 1.582 0.62 2.43 0.598 1.17 0.0122 2.312-0.353 3.259-1.042 0.2072 0.2336 0.3841 0.5021 0.561 0.7404h1.178v-3.522c0.0163-0.9156 0.3492-0.7217 1.325-0.7381v-1.093h-5.159v1.088c1.332 0.04204 1.63-0.1775 1.63 0.7474 0 1.929-1.243 2.294-1.511 2.408-0.4624 0.2047-0.9779 0.2558-1.471 0.1457s-0.9387-0.3756-1.271-0.7576c-1.285-1.549-1.245-5.113 0.021-6.619 0.6774-0.7708 1.697-0.9109 2.742-0.5629 1.178 0.3854 1.862 1.635 2.151 2.721h1.208v-3.905h-1.178l-0.3957 0.7988c-0.9069-0.7286-2.042-1.111-3.203-1.079-0.6308 0.004685-1.255 0.1299-1.839 0.369-1.862 0.7007-2.828 2.663-2.917 4.526-0.0954 2.1 0.5517 4.111 2.44 5.176z"
+            ></path>
+          </svg>
+        </a>
+        <div class="link-wrap">
+          <a href="" class="link-collection">
+            <span>COLLECTION</span>
+            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.47515 0.517291C2.31938 0.517291 2.16362 0.577808 2.05112 0.690197C1.93862 0.802587 1.87372 0.95388 1.87805 1.11382C1.87805 1.26943 1.93862 1.42505 2.05112 1.53744C2.16362 1.64983 2.31505 1.71467 2.47515 1.71035L6.94908 1.71035L0.173276 8.47965C0.0607785 8.59204 -0.00412333 8.74333 0.000203486 8.90327C0.000203486 9.05888 0.0607787 9.2145 0.173276 9.32689C0.285774 9.43928 0.437213 9.50412 0.597305 9.4998C0.753071 9.4998 0.908836 9.43928 1.02133 9.32689L7.79714 2.55759V7.01859C7.79714 7.1742 7.85772 7.32982 7.97021 7.44221C8.08271 7.5546 8.23415 7.61944 8.39424 7.61511C8.55001 7.61511 8.70578 7.5546 8.81827 7.44221C8.93077 7.32982 8.99567 7.17852 8.99135 7.01858L9 1.10517C9 1.02737 8.98269 0.949557 8.9524 0.876072C8.92212 0.802587 8.87452 0.737747 8.81827 0.681552C8.76202 0.625357 8.69279 0.582131 8.62357 0.547549C8.55001 0.517291 8.47213 0.5 8.39424 0.5L2.47515 0.517291Z"
+                fill="#252525"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <main>
+        <div class="sticky">
+          <section class="sc-video">
+            <div class="video-wrap">
+              <video src="https://www.longines.com/mini-dolcevita/longines-dolcevita-video-1-283baa29.mp4" loop muted="false" preload="auto" autoplay >
+              <!-- <video src=""></video> -->
+            </div>
+            <div class="text-wrap">
+              <div class="title">
+                <p>MINI</p>
+                <p>DOLCEVITA</p>
+              </div>
+              <div class="text">FAITES DÉFILER pour découvrir</div>
+            </div>
+          </section>
+          <section class="sc-contents">
+            <div class="group-watch">
+              <div class="overlay">
+                <div class="bg bg-watch1"></div>
+                <div class="bg bg-watch2"></div>
+                <div class="bg bg-watch3"></div>
+                <div class="bg bg-watch4"></div>
+                <div class="bg bg-watch5"></div>
+              </div>
+              <div class="title">
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+                <span class="m-text">MINI DOLCEVITA</span>
+              </div>
+              <div class="shadow">
+                <img src="./asset/images/shadow.avif" alt="" />
+              </div>
+              <div class="watch-wrap">
+                <div class="watch white">
+                  <div class="img-box">
+                    <img src="./asset/images/longines-dolcevita1.avif" alt="" />
+                  </div>
+                </div>
+                <div class="watch pink">
+                  <div class="img-box">
+                    <img src="./asset/images/watch2.avif" alt="" />
+                  </div>
+                </div>
+                <div class="watch green">
+                  <div class="img-box">
+                    <img src="./asset/images/watch4.avif" alt="" />
+                  </div>
+                </div>
+                <div class="watch blue">
+                  <div class="img-box">
+                    <img src="./asset/images/watch3.avif" alt="" />
+                  </div>
+                </div>
+                <div class="watch yellow">
+                  <div class="img-box">
+                    <img src="./asset/images/watch5.avif" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sc-content" id="content1">
+            <div class="video-area">
+              <video src="https://www.longines.com/mini-dolcevita/longines-dolcevita-video-2-f3cfbd1a.mp4" loop muted="false" preload="auto" autoplay ></video>
+              <div class="title-wrap">
+                <span>LA MARCHIRE</span>
+                <span>19:11</span>
+              </div>
+            </div>
+            <div class="product-area">
+              <h2 class="blind">LE CADRAN COSMO</h2>
+              <div class="title">
+                <span class="hide"><span>LE</span></span>
+                <span class="hide"><span>CADRAM</span></span>
+                <span class="hide"><span>COSMO</span></span>
+              </div>
+              <div class="prd-watch">
+                <div class="img">
+                  <a href="">
+                    <img src="./asset/images/ld-produits-slider1.avif" alt="" />
+                  </a>
+                </div>
+                <a href="" class="prd-text">
+                  <span>Découvrir maintenant</span>
+                </a>
+              </div>
+              <div class="paragraph">
+                <div class="title">
+                  <span class="hide"><span>L’ÉLÉGANCE</span></span>
+                  <span class="hide"><span>DANS LES</span></span>
+                  <span class="hide"><span>MOINDRES</span></span>
+                  <span class="hide"><span>DÉTAILS</span></span>
+                </div>
+                <div class="text">
+                  <p>La Mini DolceVita est l’héritière d’une impressionnante lignée : elle a été inspirée par une Longines légendaire, créée 1927, et, à l’évidence, par la collection DolceVita originale de 1997. </p>
+                </div>
+              </div>
+              <div class="info">
+                <div class="img ">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/ld-info1-2.avif" alt="" class="info-img2">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/ld-info1.avif" alt="" class="info-img1">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="info-text">
+                  <span>Dimensions du boîtier : 21,50 × 29,00 mm</span>
+                  <span>Poids : 51 g</span>
+                  <span>Diamant : 38 diamants, pour un total de 0,456 carat</span>
+                  <span>Épaisseur : 6,7 mm</span>
+                  <span>Cadran : Cosmo</span>
+                </div>
+              </div>
+              <div class="desc">
+                <div class="text">
+                  <p>Chaque modèle Mini DolceVita incarne la puissante expression d’élégance et de douceur de vivre à l’italienne depuis toujours associée à cette collection. </p>
+                </div>
+                <div class="img">
+                  <img src="./asset/images/ld-produits1-5.avif" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sc-content" id="content2">
+            <div class="video-area">
+              <video src="https://www.longines.com/mini-dolcevita/longines-dolcevita-video-3-b448e061.mp4" loop muted="false" preload="auto" autoplay ></video>
+              <div class="title-wrap">
+                <span>L'APPARTMENT</span>
+                <span>19:49</span>
+              </div>
+            </div>
+            <div class="product-area">
+              <h2 class="blind">ROSE FLEURI</h2>
+              <div class="title-area">
+                <div class="title">
+                  <span class="hide"><span>ROSE</span></span>
+                  <span class="hide"><span>FLEURI</span></span>
+                </div>
+                <div class="text">
+                  <p>La Mini DolceVita est l’héritière d’une impressionnante lignée : elle a été inspirée par une Longines légendaire, créée 1927, et, à l’évidence, par la collection DolceVita originale de 1997. </p>
+                </div>
+              </div>
+              <div class="prd-watch">
+                <div class="img">
+                  <a href="">
+                    <img src="./asset/images/watch2-info1.avif" alt="" />
+                  </a>
+                </div>
+                <a href="" class="prd-text">
+                  <span>Découvrir maintenant</span>
+                </a>
+              </div>
+              <div class="info rev">
+                <div class="img">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/watch2-slide1.avif" alt="" class="info-img1">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/watch2-slide2.avif" alt="" class="info-img2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-text">
+                  <span>Dimensions du boîtier : 21,50 × 29,00 mm</span>
+                  <span>Poids : 51 g</span>
+                  <span>Diamant : 38 diamants, pour un total de 0,456 carat</span>
+                  <span>Épaisseur : 6,7 mm</span>
+                  <span>Cadran : romain</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-area">
+              <h2 class="blind"> BLEU SEREIN</h2>
+              <div class="title">
+                <span class="hide"><span>BLEU</span></span>
+                <span class="hide"><span>SEREIN</span></span>
+              </div>
+              <div class="prd-watch">
+                <div class="img">
+                  <a href="">
+                    <img src="./asset/images/watch3-info1.avif" alt="" />
+                  </a>
+                </div>
+                <a href="" class="prd-text">
+                  <span>Découvrir maintenant</span>
+                </a>
+              </div>
+              <div class="info">
+                <div class="img">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/watch3-slide1.avif" alt="" class="info-img1">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/watch3-slide2.avif" alt="" class="info-img2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-text">
+                  <span>Dimensions du boîtier : 21,50 × 29,00 mm</span>
+                  <span>Poids : 51 g</span>
+                  <span>Diamant : 38 diamants, pour un total de 0,456 carat</span>
+                  <span>Épaisseur : 6,7 mm</span>
+                  <span>Cadran : romain</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sc-content" id="content3">
+            <div class="video-area">
+              <video src="https://www.longines.com/mini-dolcevita/longines-dolcevita-video-3-b448e061.mp4" loop muted="false" preload="auto" autoplay ></video>
+              <div class="title-wrap">
+                <span>LA VOITURE</span>
+                <span>20:49</span>
+              </div>
+            </div>
+            <div class="product-area">
+              <h2 class="blind">VERT MENTHE</h2>
+              <div class="title-area">
+                <div class="title">
+                  <span class="hide"><span>VERT</span></span>
+                  <span class="hide"><span>MENTHE</span></span>
+                </div>
+                <div class="text">
+                  <p>
+                    À travers sa personnalité toute en retenue, son style classique et ses variantes esthétiques aussi actuelles qu’intemporelles, la Mini DolceVita est un chef-d’œuvre, interprétation équilibrée du luxe discret et de l’élégance contemporaine de Longines. 
+                  </p>
+                </div>
+              </div>
+              <div class="prd-watch">
+                <div class="img">
+                  <a href="">
+                    <img src="./asset/images/watch4-info1.avif" alt="" />
+                  </a>
+                </div>
+                <a href="" class="prd-text">
+                  <span>Découvrir maintenant</span>
+                </a>
+              </div>
+              <div class="info rev">
+                <div class="img">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/watch4-slide1.avif" alt="" class="info-img1">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-swiper-parallax="100%" src="./asset/images/watch4-slide2.avif" alt="" class="info-img2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-text">
+                  <span>Dimensions du boîtier : 21,50 × 29,00 mm</span>
+                  <span>Poids : 51 g</span>
+                  <span>Diamant : 38 diamants, pour un total de 0,456 carat</span>
+                  <span>Épaisseur : 6,7 mm</span>
+                  <span>Cadran : romain</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-area">
+            <h2 class="blind">BLANC IVOIRE</h2>
+            <div class="title">
+              <span class="hide"><span>BLANC</span></span>
+              <span class="hide"><span>IVOIRE</span></span>
+            </div>
+            <div class="prd-watch">
+              <div class="img">
+                <a href="">
+                  <img src="./asset/images/watch5-info1.avif" alt="" />
+                </a>
+              </div>
+              <a href="" class="prd-text">
+                <span>Découvrir maintenant</span>
+              </a>
+            </div>
+            <div class="info">
+              <div class="img">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img data-swiper-parallax="100%" src="./asset/images/watch5-slide1.webp" alt class="info-img1">
+                    </div>
+                    <div class="swiper-slide">
+                      <img data-swiper-parallax="100%" src="./asset/images/watch5-slide2.avif" alt class="info-img2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <span>Dimensions du boîtier : 21,50 × 29,00 mm</span>
+                <span>Poids : 51 g</span>
+                <span>Diamant : 38 diamants, pour un total de 0,456 carat</span>
+                <span>Épaisseur : 6,7 mm</span>
+                <span>Cadran : romain</span>
+              </div>
+            </div>
+          </div>
+          </section> 
+          <section class="sc-content" id="content4">
+            <div class="video-area">
+              <video src="https://www.longines.com/mini-dolcevita/longines-dolcevita-video-3-b448e061.mp4" loop muted="false" preload="auto" autoplay ></video>
+              <div class="title-wrap">
+                <span>L'ATTITUDE</span>
+                <span>21:07</span>
+              </div>
+            </div>
+            <div class="product-area discover">
+              <div class="title">
+                <span class="chatchline">DÉCOUVREZ LA COLLECTION</span>
+                <span class="hide"><span>UNE TAILLE</span></span>
+                <span class="hide"><span>MINI,</span></span>
+                <span class="hide"><span>UN LARGE</span></span>
+                <span class="hide"><span>CHOIX</span></span>
+              </div>
+              <div class="prd-watch">
+                <a href="" class="link-watch grey img">
+                  <div class="top">
+                    <div class="name">LE CADRAN COSMO</div>
+                    <div class="ref">L5.200.0.75.6</div>
+                    <div class="price">€ 4’300.00</div>
+                  </div>
+                  <div class="watch">
+                    <img src="./asset/images/ld4-1.avif" alt>
+                  </div>
+                  <div class="maintenant">
+                    <span>Acheter maintenant</span>
+                  </div>
+                </a>
+                <a href="" class="link-watch pink img">
+                  <div class="top">
+                    <div class="name">ROSE FLEURI</div>
+                    <div class="ref">L5.200.0.99.2</div>
+                    <div class="price">€ 4’000.00</div>
+                  </div>
+                  <div class="watch">
+                    <img src="./asset/images/watch2.avif" alt>
+                  </div>
+                  <div class="maintenant">
+                    <span>Acheter maintenant</span>
+                  </div>
+                </a>
+                <a href="" class="link-watch blue img">
+                  <div class="top">
+                    <div class="name">BLEU SEREIN</div>
+                    <div class="ref">L5.200.0.95.2</div>
+                    <div class="price">€ 4’000.00</div>
+                  </div>
+                  <div class="watch">
+                    <img src="./asset/images/watch3.avif" alt="">
+                  </div>
+                  <div class="maintenant">
+                    <span>Acheter maintenant</span>
+                  </div>
+                </a>
+                <a href="" class="link-watch green img">
+                  <div class="top">
+                    <div class="name">VERT MENTHE</div>
+                    <div class="ref">L5.200.0.05.2</div>
+                    <div class="price">€ 4’000.00</div>
+                  </div>
+                  <div class="watch">
+                    <img src="./asset/images/watch4.avif" alt="">
+                  </div>
+                  <div class="maintenant">
+                    <span>Acheter maintenant</span>
+                  </div>
+                </a>
+                <a href="" class="link-watch beige img">
+                  <div class="top">
+                    <div class="name">BLANC IVOIRE</div>
+                    <div class="ref">L5.200.0.79.2</div>
+                    <div class="price">€ 4’000.00</div>
+                  </div>
+                  <div class="watch">
+                    <img src="./asset/images/watch5.avif" alt="">
+                  </div>
+                  <div class="maintenant">
+                    <span>Acheter maintenant</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="sc-video last" id="content5">
+            
+            <div class="video-wrap">
+              <video src="https://www.longines.com/mini-dolcevita/longines-dolcevita-video-end-18a3e0af.mp4" loop muted="false" preload="auto" autoplay ></video>
+            </div>
+            <span class="chatchline">DÉCOUVREZ LA COLLECTION</span>
+            <div class="text-wrap">
+              <div class="title">
+                <p>MINI</p>
+                <p>DOLCEVITA</p>
+              </div>             
+            </div>
+            <div class="btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                <path d="M10 1.2C14.85 1.2 18.8 5.15 18.8 10C18.8 14.85 14.85 18.8 10 18.8C5.15 18.8 1.2 14.85 1.2 10C1.2 5.15 5.15 1.2 10 1.2ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0Z" fill="white"></path>
+                <path d="M11.3391 9.78018L8.91906 8.38018C8.74906 8.28018 8.53906 8.40018 8.53906 8.60018V11.3902C8.53906 11.5902 8.74906 11.7102 8.91906 11.6102L11.3391 10.2102C11.5091 10.1102 11.5091 9.87018 11.3391 9.77018V9.78018Z" fill="white"></path>
+              </svg>
+              <span class="text-btn">Lancer le film intégral</span>
+              <!-- <span class="">Lancer le film intégral</span> -->
+              <svg class="border" width="304" height="38" viewBox="0 0 276 38"><rect x="10" y="10" w="20" h="20" stroke="blue" fill="greed"></rect>
+                <path stroke-width="1px" fill="transparent" class="path-border" d="
+                M1 19
+                A19 19 0 0 0 19 38
+                L257 38
+                A19 19 0 0 0 276 19
+                A19 19 0 0 0 257 1
+                L19 1
+                A19 19 0 0 0 1 19
+                ">
+              </path>
+              <path stroke-width="1px" fill="transparent" class="path-animated" d="
+                M1 19
+                A19 19 0 0 0 19 38
+                L257 38
+                A19 19 0 0 0 276 19
+                A19 19 0 0 0 257 1
+                L19 1
+                A19 19 0 0 0 1 19
+                " style="--length: 591.4951171875;"></path></svg>
+            </div>
+          </section> 
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="widget">
+          <p>©2023</p>
+          <p>Son</p>
+        </div>
+        <div class="nav-wrapper">
+          <div class="text-area">
+            <div class="text-wrap">
+              <div class="text">Cliquez pour ouvrir</div>
+              <div class="text-wrap-hidden">
+                <div class="text-hidden">Cliquez pour ouvrir</div>
+                </svg>
+              </div>
+            </div>
+            <svg width="10" height="6" viewBox="0 0 10 6" class="arrow-bottom">
+              <path stroke="none" d="M10 0 L0 0 L5 6 Z"></path>
+            </svg>
+          </div>
+          <div class="progress-bar">
+            <progress max="100" value="0"></progress>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script></script>
+  </body>
+</html>
