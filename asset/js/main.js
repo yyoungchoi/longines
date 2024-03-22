@@ -1,6 +1,6 @@
 history.scrollRestoration = "manual";
 gsap.registerPlugin(ScrollTrigger);
-// lenis (..?)
+
 const lenis = new Lenis();
 lenis.on("scroll", ScrollTrigger.update);
 gsap.ticker.add((time) => {

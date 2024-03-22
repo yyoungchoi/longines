@@ -11,22 +11,7 @@
   box-sizing: border-box;
   border: 0 solid;
 }
-:root {
-  --dark-grey: #252525;
-  --medium-grey: #666666;
-  --light-grey: #d2d2d2;
-  --ultra-light-grey: #f4f4f4;
-  --dark-blue: #003150;
-  --background-dark-blue: #001f33;
-  --bright-blue: #3d9ce3;
-  --brown: #817656;
-  --white: #ffffff;
-  --black: #000000;
-  --error: #bd0000;
-  --success: #33ab1f;
-  --header-height: 70px;
-  --anim-ease-out: cubic-bezier(0.32, 0.71, 0.42, 0.94);
-}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -43,8 +28,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* overflow: hidden; */
   user-select: none;
-  /* overscroll-behavior-x: none; */
-  /* overscroll-behavior-y: none; */
   touch-action: none;
   font-family: "LonginesSansText", sans-serif, serif;
 }
