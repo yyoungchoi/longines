@@ -26,10 +26,15 @@ body {
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* overflow: hidden; */
   user-select: none;
-  touch-action: none;
+  /* overflow-x: auto; */
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+  touch-action: pan-x;
   font-family: "LonginesSansText", sans-serif, serif;
+}
+html ::-webkit-scrollbar {
+  display: none; /* Chrome, Safari 및 Opera에서 스크롤바를 숨김 */
 }
 
 ul,

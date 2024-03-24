@@ -154,8 +154,9 @@ main {
   height: 100%;
   width: 500vw;
   /* overflow: hidden; */
+  /* display: flex; */
   /* display: inline-block; */
-  /* flex-shrink: 0; */
+  /* flex-shrink: 1; */
 }
 .sc-contents .group-watch {
   width: 100vw;

@@ -1,6 +1,5 @@
 @import "./reset.css";
-@import "./common.css";
-@import "./font.css";
+@import "./fonts.css";
 
 .wrapper {
   position: relative;
