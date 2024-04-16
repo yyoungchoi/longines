@@ -2,12 +2,14 @@ main {
   display: flex;
   position: relative;
   height: 1200vh;
+  white-space: nowrap;
 }
 .sticky {
   display: flex;
   position: sticky;
   top: 0;
   height: 100vh;
+  white-space: normal;
 }
 .sc-video {
   position: relative;
@@ -36,6 +38,7 @@ main {
   left: 0;
   text-align: center;
   bottom: 40px;
+  overflow: hidden;
 }
 .sc-video .text-wrap .title {
   width: 100%;
@@ -302,6 +305,7 @@ main {
   font-family: "LonginesSansText", sans-serif, serif;
   font-weight: 400;
   text-transform: uppercase;
+  overflow: hidden;
 }
 .sc-content .title-wrap span {
   display: block;
